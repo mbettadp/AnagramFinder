@@ -14,6 +14,7 @@ import javax.servlet.ServletContextListener;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class initialization {
  
@@ -48,7 +49,10 @@ public class initialization {
 			
 			//String pathToDictionary=prop.getProperty("dictionaryPath");
 			
-				BufferedReader	abc = new BufferedReader(new FileReader("/var/lib/tomcat8/webapps/ROOT/WEB-INF/resources/wordsEn.txt"));
+				
+
+				
+				BufferedReader	abc = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/wordsEn.txt")));
 				//BufferedReader	abc = new BufferedReader(new FileReader("C:/Users/mbet/workspace/AnagramFinder/AnagramFinder/src/wordsEn.txt"));		
 				ArrayList<String> lines = new ArrayList<String>();			 
 				
