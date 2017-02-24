@@ -5,6 +5,8 @@ import java.util.HashMap;
 
  
 import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Properties;
@@ -49,11 +51,15 @@ public class initialization {
 			
 			//String pathToDictionary=prop.getProperty("dictionaryPath");
 			
+				 
 				
+				//BufferedReader	abc = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/wordsEn.txt")));
+				//BufferedReader	abc = new BufferedReader(new FileReader("C:/Users/mbet/workspace/AnagramFinder/AnagramFinder/src/wordsEn.txt"));
+				//BufferedReader	abc = new BufferedReader(new FileReader("/var/lib/tomcat8/webapps/ROOT/WEB-INF/resources/wordsEn.txt"));
 
 				
-				BufferedReader	abc = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/wordsEn.txt")));
-				//BufferedReader	abc = new BufferedReader(new FileReader("C:/Users/mbet/workspace/AnagramFinder/AnagramFinder/src/wordsEn.txt"));		
+				BufferedReader	abc = new BufferedReader(new FileReader(getClass().getResource("/wordsEn.txt").getFile()));
+				
 				ArrayList<String> lines = new ArrayList<String>();			 
 				
 				
