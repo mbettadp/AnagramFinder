@@ -58,7 +58,7 @@ public class anagramFinder {
 		{
 		    //jsonString="No Anagrams of " + msg + " were found.";
 		   // throw new RuntimeException("Not a Valid Word");
-		    jsonString=specEx.RequestError("No Anagrams were found for the word " + msg);
+		    jsonString=specEx.RequestError("No Anagrams were found for the word !!!" + msg);
 			return Response.status(Response.Status.BAD_REQUEST).entity(jsonString).build();
 		}
 		
