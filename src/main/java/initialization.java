@@ -55,8 +55,8 @@ public class initialization {
 			
 				 
 				
-				//BufferedReader	abc = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/wordsEn.txt")));
-				BufferedReader	abc = new BufferedReader(new FileReader("C:/Users/mbet/workspace/AnagramFinder/AnagramFinder/src/wordsEn.txt"));
+				BufferedReader	abc = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/wordsEn.txt")));
+				//BufferedReader	abc = new BufferedReader(new FileReader("C:/Users/mbet/workspace/AnagramFinder/AnagramFinder/src/wordsEn.txt"));
 				//BufferedReader	abc = new BufferedReader(new FileReader("/var/lib/tomcat8/webapps/ROOT/WEB-INF/resources/wordsEn.txt"));
 
 				
