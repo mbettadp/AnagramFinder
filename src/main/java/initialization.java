@@ -20,8 +20,8 @@ import java.io.InputStreamReader;
 
 public class initialization {
  
-	public static HashMap<Character, Integer> hash = new HashMap<Character,Integer>();
-	public static HashMap<Integer, ArrayList<String>> anagrams= new HashMap<Integer, ArrayList<String>>();
+	public static final HashMap<Character, Integer> hash = new HashMap<Character,Integer>();
+	public static final HashMap<Integer, ArrayList<String>> anagrams= new HashMap<Integer, ArrayList<String>>();
 	
 
   
@@ -29,6 +29,8 @@ public class initialization {
 	    {
 	    	String line;
 	    	InputStream inputStream;
+	    	
+	    	if(!hash.isEmpty()) return "done";
 	    	
 	    	//Properties prop = new Properties();
 			//String propFileName = "prod.properties";
@@ -54,11 +56,11 @@ public class initialization {
 				 
 				
 				//BufferedReader	abc = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/wordsEn.txt")));
-				//BufferedReader	abc = new BufferedReader(new FileReader("C:/Users/mbet/workspace/AnagramFinder/AnagramFinder/src/wordsEn.txt"));
+				BufferedReader	abc = new BufferedReader(new FileReader("C:/Users/mbet/workspace/AnagramFinder/AnagramFinder/src/wordsEn.txt"));
 				//BufferedReader	abc = new BufferedReader(new FileReader("/var/lib/tomcat8/webapps/ROOT/WEB-INF/resources/wordsEn.txt"));
 
 				
-				BufferedReader	abc = new BufferedReader(new FileReader(getClass().getResource("/wordsEn.txt").getFile()));
+				//BufferedReader	abc = new BufferedReader(new FileReader(getClass().getResource("/wordsEn.txt").getFile()));
 				
 				ArrayList<String> lines = new ArrayList<String>();			 
 				
