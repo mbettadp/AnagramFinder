@@ -33,7 +33,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     </build>
   
   <properties>
-        <jersey.version>2.6</jersey.version>
+        <jersey.version>2.33</jersey.version>
     </properties>
   
   <repositories>
